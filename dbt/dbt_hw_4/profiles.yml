@@ -1,0 +1,9 @@
+dbt_hw_4:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'homework_w4/database.duckdb'
+      extensions:
+        - httpfs
+        - parquet
